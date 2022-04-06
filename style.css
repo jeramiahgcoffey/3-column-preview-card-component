@@ -73,6 +73,7 @@ p {
     width: fit-content;
     padding: 15px 30px;
     border-radius: 25px;
+    border: solid 2px var(--trans-white);
 }
 
 #sedans .learn {
@@ -85,6 +86,21 @@ p {
 
 #luxury .learn {
     color: var(--very-dark-cyan);
+}
+
+#sedans .learn:hover {
+    color: var(--trans-white);
+    background-color: var(--bright-orange);
+}
+
+#suvs .learn:hover {
+    color: var(--trans-white);
+    background-color: var(--dark-cyan);
+}
+
+#luxury .learn:hover {
+    color: var(--trans-white);
+    background-color: var(--very-dark-cyan);
 }
 
 .card {
@@ -100,6 +116,11 @@ p {
     text-align: center;
     font-size: 12px;
     color: var(--dark-cyan);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--bright-orange);
 }
 
 @media (min-width: 726px) {
