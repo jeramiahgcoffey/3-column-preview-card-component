@@ -6,10 +6,11 @@
     --light-grey: hsl(0, 0%, 95%);
 }
 
-* {
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100%;
+    margin: 0;
     background-color: var(--light-grey);
     color: var(--light-grey);
     font-family: 'Lexend Deca', sans-serif;
@@ -32,8 +34,8 @@ p {
 }
 
 .container {
+    flex: 1 0 auto;
     display: flex;
-    height: 100%;
     padding: 60px 15px;
     align-items: center;
     justify-content: center;
@@ -110,9 +112,9 @@ p {
 }
 
 .attribution {
-    position: static;
+    flex-shrink: 0;
+    margin-bottom: 10px;
     width: 100%;
-    padding-bottom: 10px;
     text-align: center;
     font-size: 12px;
     color: var(--dark-cyan);
@@ -124,10 +126,6 @@ p {
 }
 
 @media (min-width: 726px) {
-    body {
-        height: 100vh;
-    }
-
     .content-container {
         flex-direction: row;
         max-width: 900px;
