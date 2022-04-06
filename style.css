@@ -33,6 +33,7 @@ p {
 
 .container {
     display: flex;
+    height: 100%;
     padding: 60px 15px;
     align-items: center;
     justify-content: center;
@@ -110,7 +111,6 @@ p {
 
 .attribution {
     position: static;
-    bottom: 0;
     width: 100%;
     padding-bottom: 10px;
     text-align: center;
